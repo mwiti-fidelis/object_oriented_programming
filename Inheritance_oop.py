@@ -1,7 +1,7 @@
 #Design a class hierarchy for a library system. Create a base class called Book with attributes title, author, and isbn.
 #Implement a derived class called EBook that adds an attribute for file_size and overrides a method get_info() to include the file size in the output.
 # Create instances of both Book and EBook and demonstrate how the information is retrieved.
-'''
+
 class Book:
     def __init__(self,title, author,isbn):
         self.title = title
@@ -33,7 +33,7 @@ print("")
 
 
 #example 2
-Implement a class hierarchy for a vehicle management system.
+'''Implement a class hierarchy for a vehicle management system.
  Create a base class called Vehicle with attributes make, model, and year. 
  Then, create two derived classes: Car and Truck. 
  The Car class should have an additional attribute num_doors,
@@ -41,7 +41,7 @@ Implement a class hierarchy for a vehicle management system.
   Both derived classes should override a method vehicle_info() to provide detailed information about the vehicle.
    Finally, create a list of vehicles (both cars and trucks) 
    and demonstrate polymorphism by iterating through the list and calling the vehicle_info() method on each vehicle.
-
+'''
 
 class Vehicle:
     def __init__(self, make, model, year):
@@ -72,7 +72,6 @@ Vehicle2 = Truck("Ford", "F-150", 2021, "2000 lbs")
 
 print(Vehicle1.vehicle_info())
 print(Vehicle2.vehicle_info())
-'''
 
 from datetime import datetime
 class Vehicle:
